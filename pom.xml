@@ -12,6 +12,7 @@
     <modules>
         <module>ioc</module>
         <module>aop</module>
+        <module>jdbc</module>
     </modules>
 
     <properties>
@@ -21,10 +22,22 @@
 
     <dependencies>
 
-        <!-- Spring-core -->
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
+        <!-- HSQL -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
             <version>LATEST</version>
         </dependency>
 
