@@ -27,7 +27,7 @@ public class JdbcTest {
 	private Country countryWithChangedName = new SimpleCountry(1, "Russia", "RU");
 
 	@BeforeEach
-	public void setUp() throws Exception {
+	public void setUp() {
 		initExpectedCountryLists();
 		//countryDao.loadCountries();
 	}
