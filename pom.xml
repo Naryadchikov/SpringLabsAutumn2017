@@ -15,6 +15,7 @@
         <module>jdbc</module>
         <module>orm</module>
         <module>mvc</module>
+        <module>quartz</module>
     </modules>
 
     <properties>
@@ -48,6 +49,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
             <version>LATEST</version>
         </dependency>
 
@@ -125,6 +131,13 @@
             <artifactId>tomcat-catalina</artifactId>
             <version>7.0.47</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- Quartz -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.3.0</version>
         </dependency>
 
         <!-- Test (JUnit 5 & Mockito) -->
